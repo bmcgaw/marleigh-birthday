@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body id='confetti' class="bg-green-300">
+    <h1 class="font-dancing text-4xl md:text-[60px] mt-10 text-white text-center">Happy 26th Birthday My Love!</h1>
+    <div class="flex justify-evenly items-center mb-[50px]">
+    <img class='w-[0px] h-[0px] sm:w-[0px] sm:h-[0px] md:w-[200px] md:h-[200px] rounded-full ml-[100px] object-cover'src="margirls.jpg" alt="">
+    <img class='w-[350px] h-[350px] rounded-full m-auto mt-12 object-cover' src="family.jpeg" alt="">
+    <img class='w-[0px] h-[0px] sm:w-[0px] sm:h-[0px] md:w-[200px] md:h-[200px] rounded-full mr-[100px] object-cover' src="meandmar.jpeg" alt="">
+    </div>
+
+    <div class="w-full h-full bg-[#FFFDD0] flex flex-col justify-items-center text-center">
+        <h2 class="font-dancing text-[30px] mt-[30px] mb-[30px]">Things I love</h2>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">Chic-fil-a</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">A good coffee shop date (especially at Shades of Brown)</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">A comfy blanket</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">A pair of snazzy shoes</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">Working at Life Church!</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">My awesome friends</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">My AMAZING and perfect husband ;D</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">Snuggles from my girls</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">The beach</p>
+        <p class="font-dancing text-purple-400 mb-[7px] text-[20px]">Lindt chocolates</p>
+        <p class="font-dancing text-purple-400 mb-[30px] text-[20px]">All the Black Panther movies</p>
+    </div>
+
+<div class="flex justify-evenly flex-col w-full h-full bg-green-300 md:flex-row">
+    <div class="flex flex-col items-center mt-[50px] md:mb-[50px]">
+        <img class='object-cover rounded-full justify-center w-[200px] h-[200px]'src="meandmar2.jpeg" alt="">
+        <button id='brian-bday-message' class="w-[120px] h-[40px] bg-purple-400 mt-[20px] rounded-[20px] text-[25px] font-bold text-white font-dancing hover:cursor-pointer hover:shadow-lg hover:shadow-white">From Me</button>
+    </div>
+    <div class="flex flex-col items-center mt-[50px] md:mb-[50px]">
+        <img class='object-cover rounded-full justify-center w-[200px] h-[200px]'src="hallie.jpeg" alt="">
+        <button id='hallie-bday-message' class="w-[120px] h-[40px] bg-purple-400 mt-[20px] rounded-[20px] text-[25px] font-bold text-white font-dancing hover:cursor-pointer hover:shadow-lg hover:shadow-white">From Hallie</button>
+    </div>
+    <div class="flex flex-col items-center mt-[50px] mb-[50px]">
+        <img class='object-cover rounded-full justify-center w-[200px] h-[200px]'src="ava.jpeg" alt="">
+        <button id='ava-bday-message' class="w-[120px] h-[40px] bg-purple-400 mt-[20px] rounded-[20px] text-[25px] font-bold text-white font-dancing hover:cursor-pointer hover:shadow-lg hover:shadow-white">From Ava</button>
+    </div>
+    </div>
+
+<script type="module" src="index.js"></script>
+<script>
+    const jsConfetti = new JSConfetti();
+    
+    function confettify() {jsConfetti.addConfetti()}
+
+    document.getElementById('brian-bday-message').addEventListener('click',confettify);
+    document.getElementById('hallie-bday-message').addEventListener('click',confettify);
+    document.getElementById('ava-bday-message').addEventListener('click',confettify);
+</script>
+<script>
+    let play = document.getElementById('brian-bday-message');
+    let play2 = document.getElementById('hallie-bday-message');
+    let play3 = document.getElementById('ava-bday-message');
+
+
+    function playAudio() {
+        let audio = new Audio("brian-bday.m4a");
+        audio.play();
+    }
+
+    // function playAudio2() {
+    //     let audio = new Audio("halliebday.m4a");
+    //     audio.play();
+    // }
+
+    // function playAudio3() {
+    //     let audio = new Audio("avabday.m4a");
+    //     audio.play();
+    // }
+
+    play.addEventListener('click', playAudio);
+    // play2.addEventListener('click', playAudio2);
+    // play3.addEventListener('click', playAudio3);
+
+</script>
+
+</body>
+</html>
