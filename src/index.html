@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body id='confetti' class="bg-green-300">
-    <h1 class="font-dancing text-4xl md:text-[60px] mt-10 text-white text-center">Happy 26th Birthday My Love!</h1>
+    <h1 class="font-dancing text-4xl md:text-[60px] mt-10 text-white text-center">Happy 26th Birthday!</h1>
     <div class="flex justify-evenly items-center mb-[50px]">
     <img class='w-[0px] h-[0px] sm:w-[0px] sm:h-[0px] md:w-[200px] md:h-[200px] rounded-full ml-[100px] object-cover'src="photos/margirls.jpg" alt="">
     <img class='w-[350px] h-[350px] rounded-full m-auto mt-12 object-cover' src="photos/family.jpeg" alt="">
@@ -34,6 +34,8 @@
         <p class="font-dancing text-purple-400 mb-[30px] text-[20px]">All the Black Panther movies</p>
     </div>
 
+    <p class="text-white font-dancing text-[25px] text-center mt-[30px] ml-[4]">Click below for a few birthday messages from your "not so secret" admirers..</p>
+
 <div class="flex justify-evenly flex-col w-full h-full bg-green-300 md:flex-row">
     <div class="flex flex-col items-center mt-[50px] md:mb-[50px]">
         <img class='object-cover rounded-full justify-center w-[200px] h-[200px]'src="photos/meandmar2.jpeg" alt="">
@@ -47,6 +49,10 @@
         <img class='object-cover rounded-full justify-center w-[200px] h-[200px]'src="photos/ava.jpeg" alt="">
         <button id='ava-bday-message' class="w-[120px] h-[40px] bg-purple-400 mt-[20px] rounded-[20px] text-[25px] font-bold text-white font-dancing hover:cursor-pointer hover:shadow-lg hover:shadow-white">From Ava</button>
     </div>
+    </div>
+
+    <div class="w-full h-full bg-[#FFFDD0] flex justify-items-center">
+        <p class="font-dancing text-purple-400 text-[30px] w-full h-[130px] text-center justify-self-center p-3 mt-[20px] mb-[40px] md:mt-[40px]">Just a little something to show you how much we love and appreciate you!</p>
     </div>
 
 <script type="module" src="index.js"></script>
@@ -70,10 +76,10 @@
         audio.play();
     }
 
-    // function playAudio2() {
-    //     let audio = new Audio("halliebday.m4a");
-    //     audio.play();
-    // }
+    function playAudio2() {
+        let audio = new Audio("audio/hallie-bday.m4a");
+        audio.play();
+    }
 
     function playAudio3() {
         let audio = new Audio("audio/ava-bday.mp4");
@@ -81,7 +87,7 @@
     }
 
     play.addEventListener('click', playAudio);
-    // play2.addEventListener('click', playAudio2);
+    play2.addEventListener('click', playAudio2);
     play3.addEventListener('click', playAudio3);
 
 </script>
