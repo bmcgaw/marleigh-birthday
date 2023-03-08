@@ -537,6 +537,10 @@ video {
   margin-left: 100px;
 }
 
+.ml-\[4\] {
+  margin-left: 4;
+}
+
 .mr-\[100px\] {
   margin-right: 100px;
 }
@@ -559,10 +563,6 @@ video {
 
 .mt-\[50px\] {
   margin-top: 50px;
-}
-
-.ml-\[4\] {
-  margin-left: 4;
 }
 
 .flex {
@@ -667,10 +667,6 @@ video {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.pl-\[4\] {
-  padding-left: 4;
 }
 
 .text-center {
